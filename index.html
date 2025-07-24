@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pantone-1665': '#E35205',
+            'pantone-7622': '#A62120',
+            'cream-50': '#FFF8E1',
+            'lime-500': '#C4C42C',
+            'yellow-300': '#F2CD51',
+          },
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+            'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-roboto text-black">
+  <!-- Navigation -->
+  <nav class="bg-pantone-7622 text-white p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-roboto-condensed font-bold sr-only">Domaine Mayard</h1>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="text-white">Accueil</a></li>
+        <li><a href="#about" class="text-white">À Propos</a></li>
+        <li><a href="#wines" class="text-white">Nos Vins</a></li>
+        <li><a href="#instagram" class="text-white">Instagram</a></li>
+        <li><a href="#presse" class="text-white">Presse</a></li>
+        <li><a href="#contact" class="text-white">Où Nous Trouver</a></li>
+        <li><a href="#visit" class="text-white">Visiter</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen text-white relative" style="background-image: url('https://domainemayard.fr/wp-content/uploads/2022/11/cropped-4E489E34-BDC3-44FF-A110-6EF1BB3D0136.jpg');">
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-center">
+      <img src="http://domainemayard.fr/wp-content/uploads/2025/07/versions-logo-domaine-mayard-baseline-couleurs-1-scaled.png" alt="Domaine Mayard Logo" class="mx-auto w-50 h-40 mb-6">
+      <a href="#visit" class="bg-pantone-1665 text-white px-6 py-3 rounded-full hover:bg-pantone-7622">Réservez votre visite</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-cream-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-roboto-condensed font-bold text-center mb-8 text-pantone-1665">Notre Philosophie</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2 order-2 md:order-1">
+          <p class="text-lg mb-4">
+            Au cœur de Châteauneuf-du-Pape, notre domaine familial s’engage dans une agriculture vivante, plaçant le sol et la vigne au centre de nos pratiques. 
+            Nous cultivons 12 hectares répartis sur quatre parcelles emblématiques : Le Grand Coulet, Les Serres, La Crau Est, et Le Pointu. 
+          </p>
+          <p class="text-lg mb-4">
+            L’accent est mis sur une agriculture du vivant qui remet le sol et les plantes au centre de leurs pratiques. Semis de couverts végétaux et réduction des travaux de sols pour accroire la vie des sols et la restitution de matières organiques, taille-douce pour améliorer les réserves énergétiques de la plante et ses flux de sèves, ébourgeonnage et épamprage sévère afin d’optimiser la photosynthèse et la vigueur de nos vignes, viti-foresterie et vitipastoralisme pour recréer du paysage, de la diversité et de la microclimatique. Adaptation de nos cépages, sélections massales et porte-greffes pour replanter nos plantiers pour 100ans.
+          </p>
+          <p class="text-lg">
+            Nos cépages – Grenache, Mourvèdre, Cinsault et Syrah – sont cultivés avec soin, sans intrants, pour produire des vins authentiques, élevés en cuves de bois et de béton pendant 18 mois. 
+            Nous visons à créer des vins qui reflètent notre terroir et notre engagement pour une viticulture durable, capable de prospérer pour les générations futures.
+          </p>
+        </div>
+        <div class="md:w-1/2 order-1 md:order-2">
+          <img src="http://domainemayard.fr/wp-content/uploads/2025/07/Marketing-Photos-©Amaury-Cibot-15eme-terrain-Agriculteur-28-scaled.jpg" alt="Vineyard" class="w-full h-auto object-cover rounded-lg shadow-lg" style="height: 600px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wines Section -->
+  <section id="wines" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-roboto-condensed font-bold text-center mb-8 text-pantone-1665">Nos Vins</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+          <img src="http://domainemayard.fr/wp-content/uploads/2025/07/Marketing-Photos-©Amaury-Cibot-15eme-terrain-Savoir-faire-32-scaled.jpg" alt="Châteauneuf Rouge" class="w-full h-auto object-cover rounded-lg shadow-lg" style="height: 800px;">
+        </div>
+        <div class="md:w-1/2 space-y-8">
+          <div>
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Châteauneuf-du-Pape Rouge</h3>
+            <p class="text-gray-600">
+              Un vin complexe aux arômes de fruits rouges, d’épices et de notes florales. Corsé, élégant, avec des tanins fins et une belle longueur en bouche.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Châteauneuf-du-Pape Blanc</h3>
+            <p class="text-gray-600">
+              Frais et équilibré, ce vin blanc offre des notes florales et fruitées, parfait pour accompagner vos plats raffinés.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Côtes du Rhône</h3>
+            <p class="text-gray-600">
+              Un vin accessible, frais et fruité, idéal pour toutes les occasions, avec une touche d’élégance typique de notre terroir.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Lirac</h3>
+            <p class="text-gray-600">
+              Un vin rouge structuré aux arômes de fruits noirs mûrs, de poivre et de garrigue, offrant une belle harmonie et une finale persistante, fidèle à l’expression de son terroir unique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Presse Section -->
+  <section id="presse" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-roboto-condensed font-bold text-center mb-8 text-pantone-1665">Ce qu’en dit la presse</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">La Revue du Vin de France (2023)</h3>
+          <p class="text-gray-600 mb-4">
+            « Le côtes-du-rhône 2023 est signé d’un joli fruit avec ce duo grenache-syrah qui pointe son nez et sa fraîcheur épicée. La bouche séduit par sa trame facile, digeste et fruitée. Le châteauneuf 2022 est défini par le côté solaire du millésime et l’aromatique s’en ressent, avec une pointe de raisin compoté. »
+            <a href="https://www.larvf.com/domaine-mayard,4830825.asp" target="_blank" class="text-pantone-1665 hover:underline">[Source]</a>
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">iDealwine (2023)</h3>
+          <p class="text-gray-600 mb-4">
+            « Le côtes-du-rhône 2023 dévoile un fruit aussi frais que concentré, des arômes de cerise noire et de mûre. Un vin au fruité superbe, très pur et net, qui livre une matière fluide et souple entremêlée d’arômes de fruits des bois et de garrigue. Un bouquet complexe pour un vin séduisant et charmeur. »
+            <a href="https://www.idealwine.com/fr/acheter-vin/9f7206e1-292a-4b49-a961-f162a30ac10a-1-bouteille-Cotes-du-Rhone-Mayard-Domaine-2023-Rouge" target="_blank" class="text-pantone-1665 hover:underline">[Source]</a>
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">iDealwine (2025)</h3>
+          <p class="text-gray-600 mb-4">
+            « Châteauneuf-du-Pape 2022 : Il en ressort un vin d’une grande finesse, à la texture poudrée, soyeuse, qui dévoile de très beaux arômes de fraise, d’orange sanguine et de pivoine. Une bouteille qui pourra être dégustée jeune dans les millésimes frais, mais qui devra attendre plusieurs années en cave les années plus chaudes. »
+            <a href="https://www.idealwine.com/fr/prix-vin/218169-2022-Bouteille-Vallee-du-Rhone-Chateauneuf-du-Pape-Mayard-Domaine-rouge" target="_blank" class="text-pantone-1665 hover:underline">[Source]</a>
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Chais d’Œuvre (2025)</h3>
+          <p class="text-gray-600 mb-4">
+            « Un premier coup de crayon époustouflant et un immense coup de cœur ! J’en ai encore des frissons dans le dos ! [...] Perso, j’y vois un embryon de super domaine à suivre ! Souhaitons leur le meilleur, comme on l’a fait avec certains à leurs débuts ! Moi, je mets 12 de chaque en cave, sans hésiter une seconde ! »
+            <a href="https://www.chaisdoeuvre.fr/chateauneuf-du-pape-blanc-blanc-2022-domaine-mayard.html" target="_blank" class="text-pantone-1665 hover:underline">[Source]</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arthur, Hugo et Jean Section -->
+  <section id="team" class="py-16 bg-cream-50 relative w-full">
+    <div class="w-full text-center">
+      <h2 class="text-3xl font-roboto-condensed font-bold mb-8 text-pantone-1665">Arthur, Hugo et Jean</h2>
+      <img src="http://domainemayard.fr/wp-content/uploads/2025/07/REA10353035-scaled.jpg" alt="Arthur, Hugo et Jean" class="w-full h-auto">
+    </div>
+  </section>
+
+  <!-- Mieux comprendre nos pratiques agronomiques Section -->
+  <section id="practices" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-roboto-condensed font-bold text-center mb-8 text-pantone-1665">Mieux comprendre nos pratiques agronomiques</h2>
+      <div class="space-y-12">
+        <!-- Taille Douce -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ic54G6ivJu4?list=PLQNBggapGeH8MK8QeQUdI-1FRkkS-LkXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Taille Douce</h3>
+            <p class="text-lg">
+              La taille douce, inspirée des pratiques décrites sur <a href="https://architecteduvivant.fr/la-vigne/notre-approche-sur-la-vigne/$0" target="_blank" class="text-pantone-1665 hover:underline">Marceau Bourdarias</a>, consiste à tailler les vignes de manière physiologique pour optimiser les réserves énergétiques et améliorer les flux de sève. Cette technique réduit le stress des plantes et favorise une croissance harmonieuse et durable. Pour en savoir plus, regardez cette vidéo : <a href="https://www.youtube.com/watch?v=ic54G6ivJu4&list=PLQNBggapGeH8MK8QeQUdI-1FRkkS-LkXx" target="_blank" class="text-pantone-1665 hover:underline">Introduction à la taille douce</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Couverts Végétaux -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MO2RhBeGcQw?si=R-XjlB0g-FFrRu67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Couverts Végétaux</h3>
+            <p class="text-lg">
+              Les couverts végétaux, promus par <a href="https://wiki.tripleperformance.fr/wiki/Couverts_v%C3%A9g%C3%A9taux_en_viticulture$0" target="_blank" class="text-pantone-1665 hover:underline">Konrad Shreiber</a>, enrichissent la vie des sols en réduisant les travaux mécaniques et en restaurant la matière organique. Ils favorisent la biodiversité et améliorent la structure du sol. Découvrez une vidéo explicative : <a href="https://youtu.be/MO2RhBeGcQw?si=R-XjlB0g-FFrRu67" target="_blank" class="text-pantone-1665 hover:underline">Les bienfaits des couverts végétaux</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Santé des Plantes par la Nutrition -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/D1wJefaFrVI?t=42s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Santé des Plantes par la Nutrition</h3>
+            <p class="text-lg">
+              Selon la <a href="https://johnkempf.com" target="_blank" class="text-pantone-1665 hover:underline">Pyramide de la Santé des Plantes de John Kempf</a>, une nutrition équilibrée renforce la résilience des plantes contre les maladies et les stress environnementaux en optimisant les micronutriments. Cette approche vise à soutenir une croissance saine et durable. Pour approfondir, consultez cette vidéo : <a href="https://www.youtube.com/watch?v=D1wJefaFrVI&t=42s" target="_blank" class="text-pantone-1665 hover:underline">Pyramide de la Santé des Plantes</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Agroforesterie -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sDYZ7QBlLms?si=048WCa_ayjeXPknD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-xl font-roboto-condensed font-semibold mb-2 text-pantone-1665">Agroforesterie</h3>
+            <p class="text-lg">
+              L’agroforesterie, soutenue par <a href="https://architecteduvivant.fr/$0" target="_blank" class="text-pantone-1665 hover:underline">Architecte du vivant</a>, intègre des arbres dans les vignobles pour diversifier les paysages et créer des microclimats bénéfiques. Elle améliore la biodiversité et la résilience des cultures. Une vidéo à explorer : <a href="https://youtu.be/sDYZ7QBlLms?si=048WCa_ayjeXPknD" target="_blank" class="text-pantone-1665 hover:underline">Introduction à l’agroforesterie</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Où Nous Trouver Section -->
+  <section id="contact" class="py-16 bg-cream-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-roboto-condensed font-bold mb-8 text-pantone-1665">Où Nous Trouver</h2>
+      <p class="text-lg mb-4">Domaine Mayard</p>
+      <p class="text-lg mb-4">24 Avenue Baron Le Roy, 84230 Châteauneuf-du-Pape</p>
+      <p class="text-lg mb-4">Téléphone : 04.84.51.23.97</p>
+      <p class="text-lg mb-4">Email : <a href="/cdn-cgi/l/email-protection#b6d5d9d8c2d7d5c2f6d2d9dbd7dfd8d3dbd7cfd7c4d298d0c4" class="text-pantone-1665 hover:underline"><span class="__cf_email__" data-cfemail="30553f5e4451534470545f5d51595e555d51495142541e5642">[email&#160;protected]</span></a></p>
+      <div class="flex justify-center mt-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.006103463918!2d4.829149315495896!3d44.05616517910951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5c6b6f7b7b5b7%3A0x4e4b7c4f7b7b5b7b!2s24%20Av.%20Baron%20le%20Roy%2C%2084230%20Ch%C3%A2teauneuf-du-Pape%2C%20France!5e0!3m2!1sen!2sus!4v1698765432109!5m2!1sen!2sus" class="w-full h-96" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section id="visit" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-roboto-condensed font-bold mb-8">Réservez Votre Visite</h2>
+      <p class="text-lg mb-6">
+        Venez découvrir notre domaine, nos vignes et nos méthodes de vinification. 
+        Réservez dès maintenant pour une expérience unique au cœur de Châteauneuf-du-Pape.
+      </p>
+      <a href="/cdn-cgi/l/email-protection#0b6864657f6a687f4b6f64666a62656e666a726a796f256d79" class="bg-white text-pantone-1665 px-6 py-3 rounded-full hover:bg-gray-200">Planifiez votre visite</a>
+      <div class="mt-12">
+        <h3 class="text-2xl font-roboto-condensed font-semibold mb-6">Ce que disent nos visiteurs</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-600 mb-4">
+              « Première visite de domaine de ma vie faite avec Jean, une personne chaleureuse et passionnée de son terroir et qui le transmet magnifiquement bien ! Un vin excellent accompagné de mets de qualité, je recommande vivement autant la visite que la dégustation. Amoureux du vin et de la vie, allez-y les yeux fermés ! »
+              <a href="https://www.tripadvisor.fr/Attraction_Review-g666217-d26635136-Reviews-Domaine_Mayard-Chateauneuf_du_Pape_Vaucluse_Provence_Alpes_Cote_d_Azur.html" target="_blank" class="text-pantone-1665 hover:underline">[TripAdvisor]</a>
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-600 mb-4">
+              « Une expérience œnologique mémorable ! Arthur et Hugo nous ont accueillis avec passion pour partager leur savoir-faire et leur engagement pour une viticulture durable. La dégustation était exceptionnelle, mettant en valeur la finesse de leurs vins. »
+              <a href="https://www.ruedesvignerons.com/fr/partenaires/4213-domaine-mayard" target="_blank" class="text-pantone-1665 hover:underline">[Rue des Vignerons]</a>
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-600 mb-4">
+              « Très bonne expérience. Très bon accueil, les explications sont top. Les vins à la dégustation sont très bons et les explications toujours top. Vous risquez de repartir avec quelques bouteilles car le vin du domaine est de grande qualité ! »
+              <a href="https://www.tripadvisor.fr/Attraction_Review-g666217-d26635136-Reviews-Domaine_Mayard-Chateauneuf_du_Pape_Vaucluse_Provence_Alpes_Cote_d_Azur.html" target="_blank" class="text-pantone-1665 hover:underline">[TripAdvisor]</a>
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-600 mb-4">
+              « Une visite inoubliable au Domaine Mayard ! Les pratiques agroécologiques d’Arthur et Hugo, comme l’agroforesterie et la viticulture biologique, rendent l’expérience encore plus riche. La dégustation met en lumière des vins purs et élégants, reflet de leur terroir unique. »
+              <a href="https://www.ruedesvignerons.com/fr/partenaires/4213-domaine-mayard" target="_blank" class="text-pantone-1665 hover:underline">[Rue des Vignerons]</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pantone-7622 text-white py-4 relative">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Domaine Mayard. Tous droits réservés.</p>
+    </div>
+    <div class="absolute bottom-0 right-0 mr-4 mb-4">
+      <img src="http://domainemayard.fr/wp-content/uploads/2025/07/Chateauneuf-2.png" alt="Illustration" class="w-40 h-40 object-contain">
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9639f9971a1cbfcc',t:'MTc1MzI2MTA5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b052baf63a404',t:'MTc1MzI3MjA1NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b0c9f7ef844e2',t:'MTc1MzI3MjM2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b1725da08c000',t:'MTc1MzI3Mjc5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b32513c64e1e0',t:'MTc1MzI3MzkwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b43f0594f4551',t:'MTc1MzI3NDYyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b64fee81c4542',t:'MTc1MzI3NTk4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
